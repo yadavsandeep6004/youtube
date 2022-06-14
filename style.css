@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@200&family=Roboto:wght@300&family=Work+Sans:wght@300&display=swap');
+
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: 'Roboto', sans-serif;;
+}
+
+header{
+    background-color:#fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 8px 15px;
+    box-shadow: 1px 1px 5px rgb(203, 201, 201);
+
+}
+.logo,.search-box,.header-right-icons, form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+form{
+    margin: 0 10px;
+    border: 1px solid gray;
+
+}
+form input{
+    height: 43px;
+    width: 500px;
+    outline: none;
+    border: none;
+}
+form button{
+    height: 43px;
+    width: 55px; 
+    border: none; 
+    background-color: #EFEFEF; 
+    cursor: pointer;
+}
+i{
+    cursor: pointer;
+}
+
+.header-right-icons i{
+    margin: 0 10px;
+   
+}
+main{
+    width: 100%;
+    height: calc(100vh - 70px);
+    padding: 10px 0;
+    display: flex;
+    background-color: #F9F9F9;
+}
+.aside-box{
+    width: 25%;
+    box-shadow: 1px 1px 5px rgb(203, 201, 201);
+   
+    
+}
+
+.nav{
+    padding-left:15px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+a{
+ width: 100%;
+ height: 100%;
+ padding: 10px 20px;
+ text-decoration: none;
+ display: flex;
+ align-items: center;
+ color: rgb(51, 50, 50);
+}
+a:hover{
+    background-color: #E5E5E5;
+}
+span{
+    margin-left: 20px;
+    white-space: nowrap;
+}
+.navbar >div{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.nav .nav-link{
+   
+    /* margin-bottom: 20px; */
+    margin-right: 26px;
+}
+.left{
+    margin-right: 10px;
+}
+
+/* =================================================== */
+.contenar{
+overflow: scroll;
+}
+
+.card{
+    width: 270px;
+    background-color: #FFFFFF;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 5px rgb(203, 201, 201);
+}
+.video{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+.video img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title .ch-logo img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.title{
+    display: flex;
+
+}
+.title-text h3{
+    color: rgb(3, 3, 3);
+    line-height: 18px;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+.title-text p{
+    font-size: 12px;
+    padding-bottom: 6px;
+}
+.contenar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+
+/* ====================================================== */
+@media(max-width:800px){
+    .search-box input{
+        display: none;
+    }
+    .search-box form{
+        border: none;
+    }
+}
+@media(max-width:500px){
+    
+  .aside-box{
+    display: none;
+  }
+  .card{
+    width: 100%;
+  }
+}
